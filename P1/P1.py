@@ -41,3 +41,14 @@ list2 = sorted(my_obj,key=sort_it)
 
 for element in list2:
     print(element.ISBN,element.name, element.author, element.publisher, element.publish_date)
+
+
+def sort_it(element):
+    return element.publisher_date
+
+list2 = sorted(my_obj, key=sort_it)
+
+for element in list2:
+    print(element.ISBN, element.name, element.author, element.publisher, element.publish_date)
+
+    
